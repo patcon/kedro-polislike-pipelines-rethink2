@@ -9,6 +9,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
 
 # Cancel any pending deployment on the same branch.
 concurrency:
